@@ -1,6 +1,5 @@
-/*
-SQL LESSON 1—HOMEWORK
------------------------------------------------
+/*SQL LESSON 1—HOMEWORK
+-----------------------
 
 Create new Database called PARTS. The Database should contain four 
 tables, which must store the data provided.

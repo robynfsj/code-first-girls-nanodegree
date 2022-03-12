@@ -1,6 +1,5 @@
-/*
-SQL LESSON 1—CREATING AND POPULATING A DATABASE
------------------------------------------------
+/* SQL LESSON 1—CREATING AND POPULATING A DATABASE
+--------------------------------------------------
 
 It is time to create our very first database and populate it with few tables.
 
@@ -24,6 +23,7 @@ called main_ingredient (it will be a descriptive word)
 CREATE DATABASE nano_bakery;
 USE nano_bakery;
 
+
 -- create tables
 CREATE TABLE sweet(
     id INT NOT NULL,
@@ -37,6 +37,7 @@ CREATE TABLE savoury(
     price FLOAT(2),
     main_ingredient VARCHAR(100)
 );
+
 
 -- populate tables
 INSERT INTO sweet
@@ -56,13 +57,7 @@ VALUES
 (2, 'sausage roll', 1, null),
 (3, 'pasty', 2.45, 'beef');
 
+
 -- check tables
 SELECT * FROM sweet;
 SELECT * FROM savoury;
-
-
-
-
-    
-    
-

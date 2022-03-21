@@ -6,9 +6,9 @@
 # Comment / uncomment each line in turn to see what each in-built function does
 
 # print('Code')
-# type('Code')
-# len('Code')
-# ord('C')
-# chr(ord('C'))
+# print(type('Code'))
+# print(len('Code'))
+# print(ord('C'))
+# print(chr(ord('C')))
 # help('Code')
 # help(type('Code'))

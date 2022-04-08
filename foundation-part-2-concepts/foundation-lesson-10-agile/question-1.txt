@@ -1,0 +1,67 @@
+————————————————————————————————————————————————————————————————————————————————
+1. Complete definitions for Scrum related key terminology provided below.
+————————————————————————————————————————————————————————————————————————————————
+
+Scrum ceremonies
+----------------
+
+There are four formal ceremonies (i.e. events) that occur within the containing 
+event – the Sprint.
+
+1. Sprint Planning – An event that kicks off a sprint. It defines what can be 
+delivered and how it will be achieved. Items to be completed within a sprint are 
+selected from the Product Backlog (see further description below). Sprint 
+planning can help to foster team spirit and motivation.
+
+Product Backlog refinement – The Product Backlog is an ordered list of what is 
+needed to improve the product. Product Backlog refinement is the process of 
+breaking Product Backlog items into smaller, more precise items. This helps to 
+identify the tasks that can be achieved with a Sprint.
+
+2. Daily Scrum – This is the daily meeting/stand up that involves product owners, 
+developers and the scrum master. Each person discusses what they have been 
+working on, what they are about to work on and any issues they have. It is an 
+opportunity to review and adapt the upcoming planned work if required. The 
+meetings often take place towards the start of the day and at the same time each 
+day. It makes everyone feel like they are part of a team working towards the 
+same goal.
+
+3. Sprint Review – A meeting with the Scrum Team and key stakeholders where team 
+members describe and demonstrate the work they have done in a Sprint. Its 
+purpose is to inspect the outcome of the Sprint and assess the progress made 
+towards the Product Goal.
+
+4. Sprint Retrospective – This in an event where the Scrum Team reviews how the 
+last Sprint went, discussing what went well, any problems encountered and how 
+the problems were solved. They identify helpful changes that could be made to 
+improve their effectiveness.
+
+
+Scrum roles
+-----------
+
+A Scrum Team consists of members who together have the skills necessary to 
+create value during each Sprint. They are self-managing, deciding internally who 
+does what, when and how. The team typically consists of around 10 people or 
+fewer.
+
+Scrum Master – The team member responsible for ensuring the Scrum framework is 
+followed. They ensure all members understand Scrum theory. They are accountable 
+for the team's effectiveness.
+
+Product Owner – The team member responsible for maximising the value of the 
+product and representing the needs of the stakeholders. They manage the Product 
+Backlog (i.e. the overall list of tasks required to complete the product) and 
+make sure the team understand what they are. They communicate the Product Goal 
+to the rest of the team.
+
+Development team – Technical professionals who build the product. They create 
+the Sprint Backlog (i.e. pick the items from the Product Backlog that will be 
+completed during the Sprint), adhere to the Definition of Done (i.e. they mark 
+a task as completed when it is finished to an agreed standard), adapt their plan 
+each day to reach the Sprint Goal and hold each other to account as 
+professionals.
+
+
+The full Scrum guide is available at:
+https://scrumguides.org/scrum-guide.html

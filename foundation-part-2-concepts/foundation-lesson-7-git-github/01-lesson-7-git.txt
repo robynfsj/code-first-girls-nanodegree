@@ -1,0 +1,133 @@
+————————————————————————————————————————————————————————————————————————————————
+1. GIT WORKFLOW FUNDAMENTALS
+————————————————————————————————————————————————————————————————————————————————
+
+1.1 Working Directory
+---------------------
+The working directory is the directory (folder) that you are currently working
+in. It is also referred to as the current directory. When opening the terminal,
+the working directory is the computer's root directory (mine is the 'robyn'
+folder). You need to change the working directory to your project folder to
+execute git commands for that project. To do this, type 'cd' followed by the
+path to the directory. The command line will tell you which directory you are
+working in but to double check you can type 'ls' and it will list the files in
+the current directory.
+
+If you haven't already set up a git repo in the project folder, you can create a
+new repo with:
+
+git init
+
+If you already have remote repo, you can clone it with:
+
+git clone <URL>
+
+
+1.2 Staging Area
+----------------
+The staging area is where new and modified files are added to when you want to
+include them in the next commit. You don't have to include all of the files in
+the project directory in the git repo. Files that are not included are referred
+to as being untracked. To track a file you simply add it to the staging area and
+it will be included in the next commit. To do this use:
+
+git add <file-name>
+
+You can then save these files to the git repo using:
+
+git commit
+
+Once a file has been committed to the git repo any modifications are tracked. To
+save the modifications, you stage the file again and it moves into the staging
+area. This is done with the same command as adding a new file to be tracked. The
+files added to the staging area will all be part of the next commit.
+
+
+1.3 Local Repo (head)
+---------------------
+The local repo is the version of the git repo that is stored on your computer.
+'(head)' is a reference for the branch that you are currently working on. It can
+point to any of the branches in your repo but you can only check one branch out
+at a time.
+
+To create a branch use:
+
+git branch <branch-name>
+
+To switch to an existing branch use:
+
+git checkout <branch-name>
+
+
+1.4 Remote repo (master)
+------------------------
+The remote repo is the git repo hosted (in our case) on GitHub. It is the main
+version of the repo that multiple people can access and download their own
+version of to work on. '(master)' is the default branch created by git. To
+create a local copy of the remote repo, and when you want to update it with 
+the latest commits that others might have published to the remote repo, use:
+
+git pull 
+
+If you want to download the latest commits but not merge them straight away into 
+your working branch, use:
+
+git fetch
+
+Once you have made your local commits and want to publish them to the remote 
+repo, use:
+
+git push
+
+
+
+
+————————————————————————————————————————————————————————————————————————————————
+2. WORKING DIRECTORY FILE STATES
+————————————————————————————————————————————————————————————————————————————————
+
+Staged - new and modified files that will be included in the next commit
+
+Modified - files already in the git repo that have been changed since the last
+commit but have not yet been staged so won't be included in the next commit
+
+Committed - a file that has been committed (saved) to the local repo and is
+still the same version (i.e. no changes have been made to it)
+
+Note: A file can be both staged and modified. Git captures the state of a file
+at the time of staging. So if you modify a file after it has been staged, the
+staged file will be the version of the file at the time of staging and the
+modified file will contain new modifications that won't be committed unless
+the file is staged again.
+
+
+
+
+————————————————————————————————————————————————————————————————————————————————
+3. GIT COMMANDS
+————————————————————————————————————————————————————————————————————————————————
+
+git init – create a new git repo in the current working directory
+git clone <URL> – clone an existing repo
+
+git status – get useful information about the git repo and its files
+
+git add <file-name> – stage a new file or modified file to the staging area
+git commit -m '<git commit message>' - save staged files to the local repo
+git push – publishes the commits in the local repo to the remote repo
+
+git fetch - get remote branches and view them before merging with local repo
+git merge <branch-name> - merge the named branch into the current one
+git pull - get remote branches and merge them without viewing first
+
+git branch – list local branches
+git branch -r – list remote branches
+git branch -a – list all local and remote branches
+git branch <branch-name> – create new local branch
+git checkout -b <branch-name> – create and checkout a new branch
+git checkout <branch-name> – switch to work on an existing branch
+git branch -d <branch-name> – delete local branch 
+
+
+
+

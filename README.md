@@ -25,7 +25,7 @@ specialisation.
 ### SQL
 * [SQL lesson 1](https://github.com/robynfsj/code-first-girls-nanodegree/tree/main/foundation-part-1-sql/sql-lesson-1)—big data and creating a database 
 * [SQL lesson 2](https://github.com/robynfsj/code-first-girls-nanodegree/tree/main/foundation-part-1-sql/sql-lesson-2)—querying databases, normalisation, constraints   
-* SQL lesson 3— 
+* [SQL lesson 3](https://github.com/robynfsj/code-first-girls-nanodegree/tree/main/foundation-part-1-sql/sql-lesson-3)—operators, wildcards, sorting, aggregation, set functions 
 * SQL lesson 4— 
 * SQL lesson 5—  
 * SQL lesson 6—

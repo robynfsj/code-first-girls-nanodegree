@@ -16,15 +16,11 @@ SELECT * FROM supplier;
 SELECT 
     p.pname,
     p.weight
-FROM
-    part p
-WHERE
-    colour = "red";
+FROM part p
+WHERE colour = "red";
     
 -- 2. Find all unique supplier(s) name from London.
 SELECT DISTINCT
     s.sname
-FROM
-    supplier s
-WHERE
-    s.city = "London";
+FROM supplier s
+WHERE s.city = "London";

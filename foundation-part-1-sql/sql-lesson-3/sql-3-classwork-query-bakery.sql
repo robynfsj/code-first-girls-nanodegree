@@ -43,8 +43,7 @@ SELECT * FROM sweet;
 -- Q1 Find all savoury items that have either pork or beef filling
 SELECT
     sav.item_name
-FROM 
-    savoury AS sav
+FROM savoury AS sav
 WHERE 
     main_ingredient = "pork" 
     OR main_ingredient = "beef";
@@ -52,36 +51,30 @@ WHERE
 -- Q2 Find all sweet items that cost 50 cents or cheaper
 SELECT
     swe.item_name
-FROM
-    sweet AS swe
-WHERE
-    price <= 0.5;
+FROM sweet AS swe
+WHERE price <= 0.5;
     
 -- Q3 Find all sweet items and their price, except for cannoli
 SELECT
     swe.item_name,
     swe.price
-FROM
-    sweet AS swe
-WHERE
-    item_name != "cannoli";
+FROM sweet AS swe
+WHERE item_name != "cannoli";
 
 -- Q4 Find all sweet items that start with the letter "c"
 SELECT
     swe.item_name
-FROM
-    sweet AS swe
-WHERE
-    item_name LIKE "c%";
+FROM sweet AS swe
+WHERE item_name LIKE "c%";
 
 -- Q5 Find all savoury items that cost more than £1, but less than £3
 SELECT
     sav.item_name,
     sav.price
-FROM
-    savoury AS sav
+FROM savoury AS sav
 WHERE
-    price > 1 AND price < 3;
+    price > 1 AND 
+    price < 3;
 
 
 /* 2. Aggregation and order

@@ -23,10 +23,13 @@ SELECT * FROM project;
 SELECT * FROM supplier;
 SELECT * FROM supply;
 
-SELECT DISTINCT p.pname
+SELECT DISTINCT 
+    p.pname
 FROM part p;
 
-SELECT DISTINCT p.pname, p.p_id
+SELECT DISTINCT 
+    p.pname, 
+    p.p_id
 FROM part p;
 -- screw appears twice because the p_id is different for both screw entries
 
@@ -39,10 +42,8 @@ SELECT DISTINCT
     proj.j_id, 
     proj.jname, 
     proj.city
-FROM 
-    project proj
-WHERE
-    proj.city = "London";
+FROM project proj
+WHERE proj.city = "London";
     
     
 /* 3. DATABASE NORMALISATION

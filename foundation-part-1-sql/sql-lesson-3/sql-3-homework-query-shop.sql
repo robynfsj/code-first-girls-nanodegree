@@ -26,15 +26,11 @@ SELECT
     s1.sales_person,
     s1.sales_amount,
     s1.month
-FROM
-    sales1 AS s1
+FROM sales1 AS s1
 WHERE
-    s1.store = "London"
-AND
-    s1.month != "Dec"
-AND
-    (s1.sales_person = "Bill" OR s1.sales_person = "Frank")
-AND
+    s1.store = "London" AND 
+    s1.month != "Dec" AND 
+    (s1.sales_person = "Bill" OR s1.sales_person = "Frank") AND 
     s1.sales_amount > 50;
 
 
@@ -42,10 +38,8 @@ AND
 SELECT
     s1.week,
     COUNT(s1.sales_amount) AS number_of_sales
-FROM
-    sales1 AS s1
-GROUP BY
-    s1.week;
+FROM sales1 AS s1
+GROUP BY s1.week;
 
 
 -- Find out how many sales took place each week (and present data by week in
@@ -53,22 +47,16 @@ GROUP BY
 SELECT
     s1.week,
     COUNT(s1.sales_amount) AS number_of_sales
-FROM
-    sales1 AS s1
-GROUP BY
-    s1.week
-ORDER BY
-    s1.week DESC;
+FROM sales1 AS s1
+GROUP BY s1.week
+ORDER BY s1.week DESC;
     
 SELECT
     s1.week,
     COUNT(s1.sales_amount) AS number_of_sales
-FROM
-    sales1 AS s1
-GROUP BY
-    s1.week
-ORDER BY
-    s1.week ASC;
+FROM sales1 AS s1
+GROUP BY s1.week
+ORDER BY s1.week ASC;
     
 
 -- Find out how many sales were recorded each week on different days of the week
@@ -76,33 +64,26 @@ SELECT
     s1.week,
     s1.day,
     COUNT(s1.day) AS number_of_sales
-FROM
-    sales1 AS s1
+FROM sales1 AS s1
 GROUP BY
     s1.week,
     s1.day
-ORDER BY
-    s1.week;
+ORDER BY s1.week;
 
 
 -- We need to change salesperson's name Inga to Annette
 -- NOTE: need to disable safe mode to do this
-UPDATE
-    sales1 AS s1
-SET
-    s1.sales_person = "Annette"
-WHERE
-    s1.sales_person = "Inga";
+UPDATE sales1 AS s1
+SET s1.sales_person = "Annette"
+WHERE s1.sales_person = "Inga";
 
 
 -- Find out how many sales did Annette do
 SELECT
     s1.sales_person,
     COUNT(s1.sales_amount) AS sales_made
-FROM
-    sales1 AS s1
-WHERE
-    s1.sales_person = "Annette";
+FROM sales1 AS s1
+WHERE s1.sales_person = "Annette";
 
 
 -- Find the total sales amount by each person by day
@@ -110,8 +91,7 @@ SELECT
     s1.sales_person,
     s1.day,
     SUM(sales_amount)
-FROM
-    sales1 AS s1
+FROM sales1 AS s1
 GROUP BY
     s1.sales_person,
     s1.day;
@@ -121,12 +101,9 @@ GROUP BY
 SELECT
     s1.sales_person,
     SUM(sales_amount) AS total_sales_amount
-FROM
-    sales1 AS s1
-GROUP BY
-    s1.sales_person
-ORDER BY
-    total_sales_amount DESC;
+FROM sales1 AS s1
+GROUP BY s1.sales_person
+ORDER BY total_sales_amount DESC;
 
 
 -- How much (sum) each person sold for the given period, including the number of 
@@ -138,20 +115,16 @@ SELECT
     AVG(s1.sales_amount) AS average_sale_amount,
     MIN(s1.sales_amount) AS lowest_sale_amount,
     MAX(s1.sales_amount) AS highest_sale_amount
-FROM
-    sales1 AS s1
-GROUP BY
-    s1.sales_person;
+FROM sales1 AS s1
+GROUP BY s1.sales_person;
 
 
 -- Find the total monetary sales amount achieved by each store
 SELECT
     s1.store,
     SUM(sales_amount) AS store_sales_amount
-FROM
-    sales1 AS s1
-GROUP BY
-    s1.store;
+FROM sales1 AS s1
+GROUP BY s1.store;
 
 
 -- Find the number of sales by each person if they did less than 3 sales for the 
@@ -159,12 +132,9 @@ GROUP BY
 SELECT
     s1.sales_person,
     COUNT(s1.sales_amount) AS number_of_sales
-FROM
-    sales1 AS s1
-GROUP BY
-    s1.sales_person
-HAVING
-    number_of_sales < 3;
+FROM sales1 AS s1
+GROUP BY s1.sales_person
+HAVING number_of_sales < 3;
 
 
 -- Find the total amount of sales by month where combined total is less than £100
@@ -174,9 +144,6 @@ SELECT
     s1.month,
     COUNT(s1.sales_amount) AS number_of_sales,
     SUM(s1.sales_amount) AS total_sales_amount
-FROM
-    sales1 AS s1
-GROUP BY
-    s1.month
-HAVING
-    total_sales_amount < 100;
+FROM sales1 AS s1
+GROUP BY s1.month
+HAVING total_sales_amount < 100;

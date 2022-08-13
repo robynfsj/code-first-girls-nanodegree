@@ -41,21 +41,21 @@ CREATE TABLE savoury(
 
 -- populate tables
 INSERT INTO sweet
-(id, item_name, price)
+    (id, item_name, price)
 VALUES
-(1, 'doughnut', 0.5),
-(2, 'croissant', 0.75),
-(3, 'painauchocolat', 0.55),
-(4, 'cinnamon twirl', 0.45),
-(5, 'cannoli', 0.88),
-(6, 'apple tart', 1.12);
+    (1, 'doughnut', 0.5),
+    (2, 'croissant', 0.75),
+    (3, 'painauchocolat', 0.55),
+    (4, 'cinnamon twirl', 0.45),
+    (5, 'cannoli', 0.88),
+    (6, 'apple tart', 1.12);
 
 INSERT INTO savoury
-(id, item_name, price, main_ingredient)
+    (id, item_name, price, main_ingredient)
 VALUES
-(1, 'meat pie', 1.25, 'pork'),
-(2, 'sausage roll', 1, null),
-(3, 'pasty', 2.45, 'beef');
+    (1, 'meat pie', 1.25, 'pork'),
+    (2, 'sausage roll', 1, null),
+    (3, 'pasty', 2.45, 'beef');
 
 
 -- check tables

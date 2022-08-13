@@ -10,7 +10,7 @@ USE nano_shop;
 
 
 CREATE TABLE sales1 (
-	store VARCHAR(30),
+    store VARCHAR(30),
     week INT,
     day VARCHAR(30),
     sales_person VARCHAR(30),
@@ -20,10 +20,10 @@ CREATE TABLE sales1 (
 
 
 INSERT INTO sales1
-	(store, week, day, sales_person, sales_amount, month)
+    (store, week, day, sales_person, sales_amount, month)
 VALUES
-	("London", 2, "Monday", "Frank", 56.25, "May"),
-	("London", 5, "Tuesday", "Frank", 74.32, "Sep"),
+    ("London", 2, "Monday", "Frank", 56.25, "May"),
+    ("London", 5, "Tuesday", "Frank", 74.32, "Sep"),
     ("London", 5, "Monday", "Bill", 98.42, "Sep"),
     ("London", 5, "Saturday", "Bill", 73.90, "Dec"),
     ("London", 1, "Tuesday", "Josie", 44.27, "Sep"),

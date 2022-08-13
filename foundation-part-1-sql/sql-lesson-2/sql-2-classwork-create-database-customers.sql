@@ -157,12 +157,12 @@ adding Foreign keys that reference Primary keys from relevant tables.
 */
 
 INSERT INTO customer
-(customer_id, first_name, last_name)
+    (customer_id, first_name, last_name)
 VALUES
-(1, "Sian", "Jones"),
-(2, "Rhys", "Williams"),
-(3, "Owen", "Evans"),
-(4, "Elen", "Evans");
+    (1, "Sian", "Jones"),
+    (2, "Rhys", "Williams"),
+    (3, "Owen", "Evans"),
+    (4, "Elen", "Evans");
 
 ALTER TABLE email
 ADD CONSTRAINT fk_email

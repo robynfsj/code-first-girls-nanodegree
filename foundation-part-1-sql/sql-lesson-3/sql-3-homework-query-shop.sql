@@ -142,7 +142,7 @@ FROM
     sales1 AS s1
 GROUP BY
     s1.sales_person;
-    
+
 
 -- Find the total monetary sales amount achieved by each store
 SELECT

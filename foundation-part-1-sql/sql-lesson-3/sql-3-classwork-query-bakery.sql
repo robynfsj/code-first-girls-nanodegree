@@ -9,7 +9,8 @@ Topics covered in lesson 3:
 
 /* 1. Operators and wildcards
 
-Comparison operators:
+Comparison operators
+--------------------
 <           less than
 >           greater than
 <=          less than or equal to
@@ -17,7 +18,8 @@ Comparison operators:
 =           equal to (NOTE: this is confusing as it is different to Python)
 != or <>    not equal to
 
-Logical operators:
+Logical operators
+-----------------
 AND         both conditions must be true
 OR          either condition or both must be true
 IS          only used for NULL (IS NULL)
@@ -27,7 +29,8 @@ NOT BETWEEN select values outside of the given range
 IN          specify multiple values in a WHERE clause
 LIKE        used with wildcards to find strings that match a pattern
 
-Wildcards:
+Wildcards
+---------
 %           zero, one or multiple characters
 _           a single character only
 
@@ -45,8 +48,8 @@ SELECT
     sav.item_name
 FROM savoury AS sav
 WHERE 
-    main_ingredient = "pork" 
-    OR main_ingredient = "beef";
+    main_ingredient = "pork" OR 
+    main_ingredient = "beef";
 
 -- Q2 Find all sweet items that cost 50 cents or cheaper
 SELECT
@@ -80,12 +83,14 @@ WHERE
 /* 2. Aggregation and order
 
 ORDER BY
+--------
 Return data in a sorted order.
 Comes after a WHERE clause.
 Used with keywords ASC for ascending order (default) or DESC for descending 
 order.
 
 Set functions
+-------------
 The are numerous built-in functions in SQL. Some of the most used are:
 COUNT
 MAX
@@ -94,6 +99,7 @@ SUM
 AVG
 
 GROUP BY
+--------
 Group rows that have the same values.
 Often used with set functions to summarise data in a database. 
 Function is applied to each subset based on the group and returns one row per 
@@ -101,6 +107,7 @@ subset.
 Columns in GROUP BY must appear in SELECT list.
 
 HAVING
+------
 Used in the place of the WHERE clause when applying aggregate functions.
 Filters records based on the summarised GROUP BY results.
 Note that WHERE and HAVING can be used in the same query.

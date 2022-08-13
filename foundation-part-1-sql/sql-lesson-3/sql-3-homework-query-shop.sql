@@ -1,14 +1,12 @@
 /* SQL LESSON 3—HOMEWORK
 -------------------------
 
-We are going to use a mock database that holds a table, which contains sales data
-for a shop chain (you created it at home)
-• Importantly, we are going to assume the role of a Business Analyst or an Auditor (who
-do you prefer to be ☺) to work with this sales database
-• Our task will be to write a number of queries to analyse sales data and ‘report it back
-to our big bosses’
-• All queries that we will not finish in class will need to be completed as part of
-homework for week 3
+We are going to use a mock database that holds a table containing sales data for 
+a shop chain (you created it at home). Importantly, we are going to assume the 
+role of a business analyst or an auditor (who do you prefer to be?) to work with 
+this sales database. Our task will be to write a number of queries to analyse 
+sales data and ‘report it back to our big bosses’. All queries that we will not 
+finish in class will need to be completed as part of homework for week 3.
 */
 
 
